@@ -116,6 +116,10 @@ namespace Блокнот
                         FileWork.SaveAsFile(ref notebox, ref tbChange, ref docPath);
                         FileWork.OpenFile(ref notebox, ref tbChange, ref docPath);
                     }
+                    else
+                    {
+                        return;
+                    }
                 }
                 else if (message == DialogResult.No)
                 {
